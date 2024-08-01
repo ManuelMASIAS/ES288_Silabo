@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%	  PLANTILLA LATEX PARA ELABORACIÓN DE SÍLABOS
+%%%%				
+%%%%	
+%%%%	Autor	: Manuel Antonio MASIAS CORREA
+%%%%	Correo	: mmasias@unsch.edu.pe
+%%%%	Version	: 1.0
+%%%%
+%%%%	Notas	: Este codigo se entrega tal cual es y sin
+%%%%			  ningun tipo de garantia. Sientase libre de
+%%%%			  modificar y compartir.
+%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+% \usepackage[spanish]{babel}
+\usepackage[spanish, es-nolayout]{babel}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=2cm]{geometry}
+%\usepackage{xcolor, colortbl}
+\usepackage{lscape}
+\usepackage{array, multirow, multicol}
+\usepackage{hyperref}
+
+\usepackage{fancybox}
+
+
+\author{Manuel Antonio MASIAS CORREA}
+
+% CUERPO
+\begin{document}
+
+%%%%%%%%% Cabecera
+\begin{tabular}{l c}
+\multirow{3}{*} {\includegraphics[scale=0.5]{UNSCH-logo}} & \small {\textbf{UNIVERSIDAD NACIONAL DE SAN CRISTÓBAL DE HUAMANGA}} \\
+    & \small {FACULTAD DE INGENIERÍA DE MINAS, GEOLOGÍA Y CIVIL} \\
+    & \small {DEPARTAMENTO ACADÉMICO DE MATEMÁTICA Y FÍSICA} \\
+    & \textbf {Sílabo de ES288 Programación Estadística I}\\
+\end{tabular} 
+
+%%%%%%%%%  Datos generales
+\vspace{12pt}
+\textbf {I. DATOS GENERALES}\\
+\begin{tabular}{l l}
+1.01. FACULTAD                  & : Ingeniería de Minas, Geología y Civil\\
+1.02. ESCUELA PROFESIONAL	    & : Ciencias Físico Matemáticas\\
+1.03. CARRERA                   & : Estadística\\ 
+1.04. DEPARTAMENTO ACADÉMICO	& : Matemática y Física\\
+1.05. SEMESTRE ACADÉMICO	    & : 2024 – 2\\
+1.06. CURRICULO	                & : 2018 \\
+1.07. SIGLA	                    & : ES228\\
+1.08. REQUISITO	                & : Ninguno\\
+1.09. CRÉDITOS	                & : 4.0\\
+1.10. HORAS SEMANALES	        & : 02 Teoría – 02 Práctica – 02 Laboratorio\\
+1.11. DOCENTE	                & : Manuel Antonio MASÍAS CORREA.    \\
+                                & \hspace{.2cm}  manuel.masias@unsch.edu.pe\\
+\end{tabular}
+
+%%%%%%%%%  Sumilla
+\vspace{12pt}
+\textbf{II.	SUMILLA} \\
+
+\textbf{Tipología del curso:} Teórico – Práctico \\
+
+\textbf{Competencias}
+\begin{itemize}
+\item Usa el \LaTeX. en la elaboración de documentos y presentaciones académicas\footnote{Para la elaboración de documentos se utilizará Miktex por ser una multiplataforma con capacidad de actualizarse por sí mismo descargando nuevas versiones de componentes y paquetes instalados previamente, y su fácil proceso de instalación.}.
+\item Formula algoritmos para la solución de singularidades de estadística básica.
+\item Codifica algoritmos de solución de singularidades de Estadística básica en lenguajes de programación científica.
+\end{itemize} 
+
+\textbf{Contenido:}
+\begin{enumerate}
+\item Introducción al \LaTeX. Obtención, instalación y configuración de los programas necesarios para usar \LaTeX. Conceptos básicos del funcionamiento del programa.
+\item Tipos de documentos \LaTeX: Creación y estructura. Órdenes que cambian la apariencia: configuración de la apariencia de página. Creación de capítulos, secciones, subsecciones, tablas de contenidos.
+\item Redacción matemática. Inclusión de gráficos y links.
+\item Creación de presentaciones académicas.
+\item Herramientas de programación. Métodos de programación: programación modular, diseño orientado a objetos. Tipos de datos. Variables. Operadores. Funciones intrínsecas. Utilización interactiva. Escritura de scripts.
+\item Algoritmos. Diagramas de programación y seudocódigos. Estructuras de control. Generalidades sobre los lenguajes de programación.
+\item Instrucciones básicas de lectura/escritura. Instrucciones de asignación. Instrucciones if, while, for, switch, continue, break, return.
+\item Operaciones de lectura  y escritura con ficheros.
+\item Aplicaciones: Interpolación y ajuste de datos. 
+\end{enumerate}
+
+%%%%%%%%%% Programa de los contenidos
+
+\textbf{III. PROGRAMA DE CONTENIDOS} \\
+
+\begin{tabular} { | p{1.25cm} | p{8.75cm} | p{5cm} | }   
+\hline 
+\multicolumn{3}{|l|} {\textbf{Duración:} 16 semanas 32h de teoría 32h de práctica 32h de laboratorio.} \\ \hline 
+\multicolumn{3}{|l|} {\textbf{Resultados de aprendizaje:}} \\ 
+\multicolumn{3}{|l|} {Al finalizar la asignatura el estudiante} \\  
+\multicolumn{3}{|l|} {• Valora la importancia del \LaTeX en la ciencia, promoviendo su uso.} \\  
+\multicolumn{3}{|l|} {• Asume con responsabilidad el uso del \LaTeX en su formación.} \\ 
+\multicolumn{3}{|l|} {• Presenta oportunamente los informes relacionados con el tema.} \\ 
+\multicolumn{3}{|l|} {• Asume el valor de ser evaluado para verificar su aprendizaje.} \\ \hline
+Sem & Contenidos de aprendizaje & Actividades de aprendizaje \\ 
+\hline 
+1 & {Introducción al \LaTeX. Obtención, instalación y configuración de los programas necesarios para usar \LaTeX. Conceptos básicos del funcionamiento del programa}  & {Instala MikTex y Texmaker.} \\ \hline 
+2\hspace{0.1cm}--\hspace{0.1cm}3 & {Tipos de documentos \LaTeX: Creación y estructura. Órdenes que cambian la apariencia: configuración de la apariencia de página. Creación de capítulos, secciones, subsecciones, tablas de contenidos.} & {Elabora reportes básicos en \LaTeX} \\ 
+\hline
+4\hspace{0.1cm}--\hspace{0.1cm}5 & {Redacción matemática. Inclusión de gráficos y links.} & {Elabora reportes con notación matemática en \LaTeX} \\ 
+\hline
+6\hspace{0.1cm}--\hspace{0.1cm}7 & {Beamer} & {Elabora Beamers} \\ 
+\hline 
+\multicolumn{3}{|c|}{\textbf{$1^{ra}$ Práctica calificada - Examen parcial}} \\ 
+\hline 
+9\hspace{0.1cm}--\hspace{0.1cm}10 & {Herramientas de programación. Métodos de programación: programación modular, diseño orientado a objetos. Tipos de datos. Variables. Operadores.} & {Elabora diagrama de flujos} \\ 
+\hline 
+11\hspace{0.1cm}--\hspace{0.1cm}12 & {Instrucciones básicas de lectura/escritura. Instrucciones de asignación.} & {Elabora programas con las instrucciones estudiadas.} \\ 
+\hline
+13\hspace{0.1cm}--\hspace{0.1cm}14 & {Instrucciones de control.} & {Elabora programas con las instrucciones estudiadas} \\ 
+\hline
+15 & {Aplicaciones: Interpolación y ajuste de datos.} & {Elabora programas con las instrucciones estudiadas} \\ 
+\hline
+\multicolumn{3}{|c|}{\textbf{$2^{da}$ Práctica calificada - Examen final}} \\
+\hline
+\end{tabular} 
+
+%%%%%%%%%% Estrategias metodológicas
+\vspace{12pt}
+\textbf{IV.	ESTRATEGIAS METODOLÓGICAS}\\
+La asignatura es de naturaleza teórico – práctico, con participación del estudiante bajo el asesoramiento del docente como facilitador, promoviendo la búsqueda constante de aprendizajes significativos. Para alcanzar las competencias propuestas, en el desarrollo de la asignatura se emplearán las estrategias siguientes:
+\begin{itemize}
+\item Implementación de equipos de trabajo. Mediante este procedimiento se organizará a los alumnos en equipos de trabajo dependiendo del número de matriculados en la asignatura, los cuales expondrán temas de aplicación relacionados con su carrera.
+\item Técnicas de aprendizaje Tándem y Rally. Con el fin de dar al estudiante oportunidad para que utilice su experiencia en la puesta en práctica de su actitud de constructor de su conocimiento y de investigador, que le conlleven a elaborar nuevos conocimientos con el esfuerzo mancomunado del equipo de trabajo.
+\item Uso de Google Classroom para sesiones asíncronas y síncronas cuando sean requeridas. El horario en las sesiones síncronas se mantendrá a fin evitar sobre posición de desarrollo de clases.
+\end{itemize}
+
+%%%%%%%%%% Materiales educativos
+\textbf{V.	MATERIALES EDUCATIVOS}\\
+Para que el trabajo tenga éxito, se facilitará materiales en formato digital, además se indicarán los textos básicos de consulta, direcciones electrónicas para recabar información especializada del tema a investigar, entre otros soportes bibliográficos, de tal manera que las exposiciones de los resultados se tendrán que socializar utilizando:
+\begin{itemize}
+\item Diapositivas de clases. 
+\item Exposición de las tareas de investigación bibliográfica con activa participación de los estudiantes.
+\item Solución de problemas de aplicación propuestos por el profesor en el aula para ser expuestos en clase.
+\item Google Classroom u otro software necesario para la comunicación vía internet.
+\end{itemize}
+
+
+\textbf{VI.	SISTEMA DE EVALUACIÓN}\\
+La evaluación se efectuará mediante el sistema vigesimal: 0 – 20.\\
+La nota mínima aprobatoria será de 11 (once); siendo el medio punto (0,5) de beneficio para el alumno solamente en el promedio final.\\
+La asistencia a las clases teóricas y prácticas es obligatoria. Las inasistencias superiores al 30\% de horas lectivas teóricas, prácticas o de laboratorio, descalificarán al estudiante en su evaluación final.\\
+El promedio final de la asignatura estará constituido por:
+
+\begin{tabular}{p{6cm} p{3cm}} 
+Examen Parcial 						&	EP	= 30\% \\
+Examen Final	                    &   EF	= 40\% \\
+1$^{ra}$ Práctica calificada        &   PC1	= 15\% \\
+2$^{da}$ Práctica calificada        &   PC2	= 15\% \\
+\end{tabular} \\
+
+El promedio Final (PF) será de acuerdo con la siguiente fórmula:
+
+\begin{center}
+\shadowbox{\textbf{PF = 0,30*(EP) + 0,40*(EF) + 0,15*(PC1) + 0,15*(PC2)}}
+\end{center}
+
+%%%%%%%%%% Bibliografía
+\textbf{VII. BIBLIOGRAFIA}\\
+
+Aristizábal Martínez, D. A., Quiceno Metaute, S. M. (2023). \textbf{Lógica de programación básica orientada a objetos con ejercicios resueltos.} (1 ed.). Instituto Tecnológico Metropolitano. \url{https://elibro.net/es/lc/unsch/titulos/253798}\\
+
+Biblioteca CRAI (23.ene.2024) \textbf{\LaTeX: redacción de documentos científicos}. \url{https://guiasbib.upo.es/latex/imagenes}\\
+
+Contento Rubio, M. R. (2019). \textbf{Estadística con aplicaciones en R.} (1 ed.). Editorial Utadeo. \url{https://elibro.net/es/ereader/unsch/220926?page=47} \\
+
+Gil Pascual, J. A. (2020). \textbf{Aplicaciones de R en estadística básica y textual:} ( ed.). UNED - Universidad Nacional de Educación a Distancia. \url{https://elibro.net/es/ereader/unsch/129191?page=60}\\
+
+Juganaru Mathieu, M. (2015). \textbf{Introducción a la programación:} ( ed.). Grupo Editorial Patria. \url{https://elibro.net/es/lc/unsch/titulos/39449}\\
+
+Pueyo Mena, J. (23.abr.2000) \textbf{¿Alergia al \LaTeX?.} \url{https://www.prhlt.upv.es/~evidal/students/Links/sdlatex.pdf}\\
+
+Pujol Jover, M., Pujol Jover, M. (2017). \textbf{Análisis cuantitativo con R: matemáticas, estadística y econometría.} ( ed.). Editorial UOC. \url{https://elibro.net/es/ereader/unsch/58652?page=82}\\
+
+Sánchez Alberca, A. (s.f.) \textbf{Manual de \LaTeX.} \url{https://aprendeconalf.es/latex-manual/manual-latex.pdf} \\
+
+Molina, L. (2009) \textbf{Apuntes de \LaTeX.} Recuperado 25 de junio del 2024. \url{https://metodos.fam.cie.uva.es/~latex/apuntes/apuntes1.pdf}
+
+Salinas, H. (2008) \textbf{Apuntes de \LaTeX.} \url{https://mat.uda.cl/hsalinas/cursos/2008/latex/apuntes1.pdf}
+
+web (2024). \textbf{Tutoriales, documentación y código para diseñar con \LaTeX} \url{https://manualdelatex.com/}
+
+González Otero, D.M. (2011) \textbf{Creación de presentaciones con beamer.} \url{https://www.utm.mx/~vero0304/ST/5beamer.pdf}
+
+
+\end{document}
+
+Molina, L. (2009) \textbf{Apuntes de \LaTeX.} Recuperado 25 de junio del 2024. \url{https://metodos.fam.cie.uva.es/~latex/apuntes/apuntes1.pdf}
+
+Salinas, H. (2008) \textbf{Apuntes de \LaTeX.} \url{https://mat.uda.cl/hsalinas/cursos/2008/latex/apuntes1.pdf}
+
+web (2024). \textbf{Tutoriales, documentación y código para diseñar con \LaTeX} \url{https://manualdelatex.com/}
